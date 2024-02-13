@@ -1,0 +1,32 @@
+### Register
+post http://localhost:5000/api/student
+Content-Type: application/json
+
+{
+    "name":"Maung Kyaw",
+    "email":"maungkyaw@gmail.com",
+    "phone": "1234567890",
+    "address":"Yangon",
+    "city":"Yangon"
+}
+
+### List
+GET http://localhost:5000/api/student
+
+### GET Detail
+GET http://localhost:5000/api/student/detail?studentid=2
+
+### Update
+put http://localhost:5000/api/student?studentid=3
+Content-Type: application/json
+
+{
+    "name":"Kyaw Kyaw",
+    "email":"kyawkyaw2@gmail.com",
+    "phone": "12345678901",
+    "address":"Yangon",
+    "city":""
+}
+
+###Delete
+DELETE http://localhost:5000/api/student?studentid=16
